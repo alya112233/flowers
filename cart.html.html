@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة التسوق - بتلة فلاورز</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنبيه العلوي -->
+    <div class="alert-bar">
+        <p>الشحن مجاني للطلبات فوق 200 ريال</p>
+    </div>
+    
+    <!-- الرأس -->
+    <header class="header">
+        <div class="container">
+            <!-- شريط البحث والحساب -->
+            <div class="top-bar">
+                <div class="logo">
+                    <a href="petals.html">
+                        <img src="images/new logo.png" alt="بتلة فلاورز">
+                    </a>
+                </div>
+                
+                <div class="search-box">
+                    <input type="text" placeholder="ابحث عن هدايا، زهور...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="user-actions">
+                    <a href="Log in.HTML"><i class="far fa-user"></i></a>
+                    <a href="shopping.HTML" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                </div>
+            </div>
+            <!-- القائمة الرئيسية -->
+            
+        </div>
+    </header>
+     
+
+    <!-- محتوى صفحة السلة -->
+    <main class="cart-page">
+        <div class="container">
+            <div class="cart-header">
+                <h1><i class="fas fa-shopping-cart"></i> سلة التسوق</h1>
+                <div class="breadcrumb">
+                    <a href="petals.html">حسابي</a> / <span>سلة التسوق</span>
+                </div>
+            </div>
+
+            <div class="cart-content">
+                <div class="cart-items">
+                    <div class="cart-table-header">
+                        <div class="header-item product-col">المنتج</div>
+                        <div class="header-item price-col">السعر</div>
+                        <div class="header-item quantity-col">الكمية</div>
+                        <div class="header-item total-col">المجموع</div>
+                        <div class="header-item action-col"></div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="product-col">
+                            <div class="product-image">
+                                <img src="images/66.jpg" alt="باقة ورد طبيعي">
+                            </div>
+                            <div class="products-page">
+                                <h3><a href="products.HTML">باقة ورد طبيعي</a></h3>
+                                <p>باقة من 24 وردة حمراء طازجة</p>
+                            </div>
+                        </div>
+                        <div class="price-col">
+                            <span class="product-price">149 ر.س</span>
+                        </div>
+                        <div class="quantity-col">
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="total-col">
+
+
+<span class="product-total">149 ر.س</span>
+                        </div>
+                        <div class="action-col">
+                            <button class="remove-btn"><i class="fas fa-trash-alt"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="product-col">
+                            <div class="product-image">
+                                <img src="images/products/gift1.jpg" alt="هدية عيد ميلاد">
+                            </div>
+                            <div class="product-details">
+                                <h3><a href="product-details.html">هدية عيد ميلاد</a></h3>
+                                <p>باقة زهور مع هدية وشوكولاتة</p>
+                            </div>
+                        </div>
+                        <div class="price-col">
+                            <span class="product-price">199 ر.س</span>
+                        </div>
+                        <div class="quantity-col">
+                            <div class="quantity-control">
+                                <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                                <input type="number" value="2" min="1" class="quantity-input">
+                                <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                        <div class="total-col">
+                            <span class="product-total">398 ر.س</span>
+                        </div>
+                        <div class="action-col">
+                            <button class="remove-btn"><i class="fas fa-trash-alt"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-summary">
+                    <div class="summary-card">
+                        <h3>ملخص الطلب</h3>
+                        
+                        <div class="summary-row">
+                            <span>الإجمالي الجزئي</span>
+                            <span class="subtotal">547 ر.س</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span>تكلفة الشحن</span>
+                            <span class="shipping">25 ر.س</span>
+                        </div>
+                        
+                        <div class="summary-row discount-row">
+                            <div class="discount-input">
+                                <input type="text" placeholder="كود الخصم">
+                                <button class="apply-discount">تطبيق</button>
+                            </div>
+                            <span class="discount-amount">-0 ر.س</span>
+                        </div>
+                        
+                        <div class="summary-row total-row">
+                            <span>المجموع النهائي</span>
+                            <span class="total">572 ر.س</span>
+                        </div>
+                        
+                        <a href="checkout.html" class="checkout-btn">إتمام عملية الشراء</a>
+                        <a href="products.html" class="continue-btn">مواصلة التسوق</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>بتلة فلاورز</h3>
+                    <p>متجرنا يقدم أجمل باقات الزهور والهدايا لتكون خير معبر عن مشاعركم.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="WeAre.html">عن المتجر</a></li>
+                        <li><a href="WeAre.html">الشروط والأحكام</a></li>
+                        <li><a href="WeAre.html">سياسة الخصوصية</a></li>
+
+
+<li><a href="cool us.HTML">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>وسائل التواصل</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; بتلة فلاورز <span id="current-year">2023</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+    <script>
+        // إضافة السنة الحالية
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

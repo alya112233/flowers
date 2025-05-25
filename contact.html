@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بتلة فلاورز - متجر الزهور والهدايا</title>
+    <meta name="description" content="متجر بتلة فلاورز للزهور والهدايا، توصيل زهور وهدايا في جميع أنحاء المملكة">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنبيه العلوي -->
+    <div class="alert-bar">
+        <p>الشحن مجاني للطلبات فوق 200 ريال</p>
+    </div>
+    
+    <!-- الرأس -->
+    <header class="header">
+        <div class="container">
+            <!-- شريط البحث والحساب -->
+            <div class="top-bar">
+                <div class="logo">
+                    <a href="petals.html">
+                        <img src="images/new logo.png" alt="بتلة فلاورز">
+                    </a>
+                </div>
+                
+                <div class="search-box">
+                    <input type="text" placeholder="ابحث عن هدايا، زهور...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="user-actions">
+                    <a href="Login.HTML"><i class="far fa-user"></i></a>
+                    <a href="cart.HTML" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                </div>
+            </div>
+ 
+        </div>
+        <h1>مواقع توصيل الطلبات</h1>
+        <p>نقوم بتوصيل الطلبات في العديد من المدن داخل المملكة. تعرف على المناطق المدعومة أدناه.</p>
+    </header>
+    <main class="contact">
+        <div class="container">
+            <div class="page-header">
+                <h1><i class="fas fa-shopping-bag"></i> مواقع التوصيل</h1>
+                <div class="breadcrumb">
+                    <a href="petals.html">حسابي</a> / <span>مواقع التوصيل</span>
+                </div>
+            </div>
+            <section class="content-container">
+        <div class="locations-list">
+            <h2>المناطق التي نوصل إليها:</h2>
+            <ul>
+                <li>الرياض</li>
+                <li>جدة</li>
+                <li>الدمام</li>
+                <li>الخبر</li>
+                <li>المدينة المنورة</li>
+                <li>مكة المكرمة</li>
+                <li>الطائف</li>
+                <li>بريدة</li>
+                <li>أبها</li>
+                <li>حائل</li>
+                <li>تبوك</li>
+                <li>جيزان</li>
+                <li>ينبع</li>
+            </ul>
+        </div>
+
+        <div class="map-section">
+            <button onclick="locateMe()">📍 تحديد موقعي</button>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.949234692788!2d46.67529517582435!3d24.71355107804286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f038e5f6f1f8d%3A0x4b5de59c7348e924!2z2KfZhNis2KfZhdi5INin2YTYqti02YjYqSDYp9mE2YXZitmE2KfZhg!5e0!3m2!1sar!2ssa!4v1715941517899!5m2!1sar!2ssa" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+<footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>بتلة فلاورز</h3>
+                    <p>متجرنا يقدم أجمل باقات الزهور والهدايا لتكون خير معبر عن مشاعركم.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#">عن المتجر</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>وسائل التواصل</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; بتلة فلاورز 2023</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,88 @@
+/* تصميم متجاوب للهواتف والأجهزة اللوحية */
+
+@media (max-width: 1200px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .search-box {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .logo, .search-box, .user-actions {
+        width: 100%;
+    }
+    
+    .search-box {
+        order: 3;
+    }
+    
+    .main-nav ul {
+        flex-wrap: wrap;
+    }
+    
+    .main-banner {
+        height: 400px;
+    }
+    
+    .banner-content h1 {
+        font-size: 32px;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .category-grid, .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .main-banner {
+        height: 300px;
+    }
+    
+    .banner-content h1 {
+        font-size: 24px;
+    }
+    
+    .section-title {
+        font-size: 22px;
+    }
+}
+.ai-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.ai-button:hover {
+    background-color: #2980b9;
+}

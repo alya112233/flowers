@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> جميع المنتجات - بتلة فلاورز</title>
+    <meta name="description" content="تصفح جميع منتجاتنا من الزهور والهدايا">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنبيه العلوي -->
+    <div class="alert-bar">
+        <p>الشحن مجاني للطلبات فوق 200 ريال</p>
+    </div>
+    
+    <!-- الرأس -->
+    <header class="header">
+        <div class="container">
+            <!-- شريط البحث والحساب -->
+            <div class="top-bar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="بتلة فلاورز">
+                    </a>
+                </div>
+                
+                <div class="search-box">
+                    <input type="text" placeholder="ابحث عن هدايا، زهور...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="user-actions">
+                    <a href="login.html"><i class="far fa-user"></i></a>
+                    <a href="shopping.HTML" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                </div>
+            </div>
+            
+            <!-- القائمة الرئيسية -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="petals.html">الرئيسية</a></li>
+                    <li><a href="المنتجات.HTML">المنتجات</a></li>
+                    <li><a href="ai-page.html">المساعد للذكاء الاصطناعي</a>
+                    <li><a href="cool us.HTML">اتصل بنا</a></li>
+                    <li><a href="WeAre.html"> من نحن  </a></li>
+                    <li><a href=" shopping.HTML"></a></li>
+                    <li><a href=" checkout.HTML"></a></li>
+                    <li><a href="  Log in.HTML"></a></li>
+                    <li><a href="  register.HTML"></a></li>
+                    <li><a href="  forgot password.HTML"></a></li>/a></li>
+                    
+                    
+                </ul>
+            </nav>
+        </div>
+<!--#include virtual="includes/header.html" -->
+    <!-- استبدال المتغيرات -->
+    <!--
+        @page_title = جميع المنتجات - بتلة فلاورز
+        @page_description = تصفح جميع منتجاتنا من الزهور والهدايا
+        @products_active = active
+        @additional_css = <link rel="stylesheet" href="css/products.css">
+    -->
+
+    <main class="products-page">
+        <div class="container">
+            <div class="page-header">
+                <h1><i class="fas fa-shopping-bag"></i> جميع المنتجات</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">الرئيسية</a> / <span>المنتجات</span>
+                </div>
+            </div>
+
+            <div class="products-filter">
+                <div class="filter-section">
+                    <select id="category-filter">
+                        <option value="">جميع الفئات</option>
+                        <option value="flowers">زهور طبيعية</option>
+                        <option value="bouquets">باقات مميزة</option>
+                        <option value="gifts">هدايا</option>
+                    </select>
+                    
+                    <select id="price-filter">
+                        <option value="">ترتيب حسب السعر</option>
+                        <option value="low-to-high">من الأقل إلى الأعلى</option>
+                        <option value="high-to-low">من الأعلى إلى الأقل</option>
+                    </select>
+                </div>
+                
+                <div class="view-options">
+                    <button class="grid-view active"><i class="fas fa-th"></i></button>
+                    <button class="list-view"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+            
+            <div class="products-container grid-view">
+                <!-- المنتج 1 -->
+                <div class="product-card">
+                    <div class="product-badge">عرض</div>
+                    <a href="product-details.html" class="product-image">
+                        <img src="images/products/flower1.jpg" alt="باقة زهور">
+                    </a>
+                    <div class="product-info">
+                        <h3><a href="product-details.html">باقة ورد طبيعي</a></h3>
+                        <div class="product-meta">
+                            <span class="rating">
+                                <i class="fas fa-star"></i> 4.8 (24)
+                            </span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">149 ر.س</span>
+                            <span class="old-price">199 ر.س</span>
+                        </div>
+                        <button class="add-to-cart">أضف إلى السلة</button>
+                    </div>
+                </div>
+                
+                <!-- يمكن إضافة المزيد من المنتجات -->
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="prev"><i class="fas fa-chevron-right"></i></a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#" class="next"><i class="fas fa-chevron-left"></i></a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>بتلة فلاورز</h3>
+                    <p>متجرنا يقدم أجمل باقات الزهور والهدايا لتكون خير معبر عن مشاعركم.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#">عن المتجر</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>وسائل التواصل</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; بتلة فلاورز 2023</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="products.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
+
+<!--#include virtual="includes/footer.html" -->
+    <!--
+        @additional_js = 
+        <script src="js/products.js"></script>
+        <script src="js/cart.js"></script>
+    -->

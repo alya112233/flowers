@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب - بتلة فلاورز</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنبيه العلوي -->
+    <div class="alert-bar">
+        <p>الشحن مجاني للطلبات فوق 200 ريال</p>
+    </div>
+    
+    <!-- الرأس المبسط -->
+    <!-- الرأس -->
+    <header class="header">
+        <div class="container">
+            <!-- شريط البحث والحساب -->
+            <div class="top-bar">
+                <div class="logo">
+                    <a href="register.HTML">
+                        <img src="images/new logo.png" alt="بتلة فلاورز">
+                    </a>
+                </div>
+                
+                <div class="search-box">
+                    <input type="text" placeholder="ابحث عن هدايا، زهور...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="user-actions">
+                    <a href="Login.HTML"><i class="far fa-user"></i></a>
+                    <a href="cart.HTML" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                </div>
+            </div>
+            
+            <!-- القائمة الرئيسية -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="indxbetals.html">الرئيسية</a></li>
+
+                     <li><a href="coolus.HTML">اتصل بنا</a></li>
+
+
+                    <li><a href="WeAre.html"> من نحن  </a></li>
+                    <li><a href="petals.html"></a></li>
+                    <li><a href="products.HTML"></a></li>
+                    <li><a href="ai-page.html"></a></li>
+                   
+                    <li><a href="cart.HTML"></a></li>
+                    <li><a href="checkout.HTML"></a></li>
+                    <li><a href="Login.HTML"></a></li>
+                    <li><a href="register.HTML"></a></li>
+                    <li><a href="forgotpassword.HTML"></a></li>
+                    
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+     
+    <!-- محتوى صفحة التسجيل -->
+    <main class="auth-page">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-form">
+                    <h1><i class="fas fa-user-plus"></i> إنشاء حساب جديد</h1>
+                    
+                    <form method="POST" action="Login.HTML">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">الاسم الأول *</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" name="Fname" id="Fname"required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">اسم العائلة *</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" name="Lname" id="Lname"required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="registerEmail">البريد الإلكتروني *</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" name="Email" id="Email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="registerPhone">رقم الجوال *</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-phone"></i>
+                                <input type="tel" name="Phone" id="Phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="registerPassword">كلمة المرور *</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" name="Password"  id="Password"required>
+                                <button type="button" class="toggle-password"><i class="fas fa-eye"></i></button>
+                            </div>
+                            <div class="password-strength">
+                                <span class="strength-bar weak"></span>
+                                <span class="strength-bar medium"></span>
+                                <span class="strength-bar strong"></span>
+                                <span class="strength-text">قوة كلمة المرور: ضعيفة</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="confirmPassword">تأكيد كلمة المرور *</label>
+                            <div class="input-with-icon">
+
+
+<i class="fas fa-lock"></i>
+                                <input type="password" name="Repassword" id="Repassword" required>
+                                <button type="button" class="toggle-password"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group terms">
+                            <input type="checkbox" id="agreeTerms" required>
+                            <label for="agreeTerms">أوافق على <a href="#">الشروط والأحكام</a> وسياسة الخصوصية</label>
+                        </div>
+                        
+                        <button type="submit" class="auth-btn">إنشاء حساب</button>
+                        
+                        <div class="auth-footer">
+                            <p>لديك حساب بالفعل؟ <a href="Login.HTML">تسجيل الدخول</a></p>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="auth-image">
+                    <img src="images/81.jpg" alt="  فلاورز">
+                    <div class="auth-benefits">
+                        <h3>مزايا التسجيل</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> تتبع طلباتك بسهولة</li>
+                            <li><i class="fas fa-check-circle"></i> حفظ سجل المشتريات</li>
+                            <li><i class="fas fa-check-circle"></i> عملية دفع أسرع</li>
+                            <li><i class="fas fa-check-circle"></i> عروض حصرية للأعضاء</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- الفوتر المبسط -->
+    <footer class="footer auth-footer">
+        <div class="container">
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; بتلة فلاورز <span id="current-year">2023</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>باقة أنيقة - بتلة ورد</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <section class="product-details">
+    <img src="images/1.png" alt="باقة أنيقة" class="product-image">
+    <h1 class="product-title">باقة أنيقة</h1>
+    <p class="product-desc">باقة مثالية تعبر عن الرقي، تغليف فاخر وتوصيل مضمون.</p>
+    <p class="product-price">السعر: 199 ريال</p>
+    <button class="add-to-cart">🛒 أضف إلى السلة</button>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script>
+    fetch("header.html").then(res => res.text()).then(data => document.getElementById("header-placeholder").innerHTML = data);
+    fetch("footer.html").then(res => res.text()).then(data => document.getElementById("footer-placeholder").innerHTML = data);
+
+    // زر السلة (placeholder)
+    document.querySelector('.add-to-cart').addEventListener('click', () => {
+      alert("تمت إضافة الباقة إلى السلة.");
+    });
+  </script>
+</body>
+</html>

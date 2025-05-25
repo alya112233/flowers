@@ -1,0 +1,132 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - بتلة فلاورز</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنبيه العلوي -->
+    <div class="alert-bar">
+        <p>الشحن مجاني للطلبات فوق 200 ريال</p>
+    </div>
+    
+    <!-- الرأس المبسط -->
+    <!-- الرأس -->
+    <header class="header">
+        <div class="container">
+            <!-- شريط البحث والحساب -->
+            <div class="top-bar">
+                <div class="logo">
+                    <a href="Login.HTML">
+                        <img src="images/new logo.png" alt="بتلة فلاورز">
+                    </a>
+                </div>
+                
+                <div class="search-box">
+                    <input type="text" placeholder="ابحث عن هدايا، زهور...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="user-actions">
+                    <a href="Login.HTML"><i class="far fa-user"></i></a>
+                    <a href="" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                </div>
+            </div>
+            
+            <!-- القائمة الرئيسية -->
+            <nav class="main-nav">
+                <ul>
+                      <li><a href="indexpetals.html">الرئيسية</a></li>
+
+
+                      <li><a href="coolus.HTML">اتصل بنا</a></li>
+
+
+                    <li><a href="WeAre.html"> من نحن  </a></li>
+                    <li><a href="petals.html"></a></li>
+                    <li><a href="products.HTML"></a></li>
+                    <li><a href="ai-page.html"></a></li>
+                    <li><a href="cart.HTML"></a></li>
+                    <li><a href=" checkout.HTML"></a></li>
+                    <li><a href="  Login.HTML"></a></li>
+                    <li><a href="  register.HTML"></a></li>
+                    <li><a href="  forgotpassword.HTML"></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+     
+
+    <!-- محتوى صفحة تسجيل الدخول -->
+     
+    <main class="auth-page">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-form">
+                    <h1><i class="fas fa-sign-in-alt"></i> تسجيل الدخول</h1>
+                    
+                    <form  action="petals.html" method="post">
+                        <div class="form-group">
+                            <label for="loginEmail">البريد الإلكتروني *</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="loginEmail" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="loginPassword">كلمة المرور *</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="loginPassword" required>
+                                <button type="button" class="toggle-password"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                     
+                        <div class="form-options">
+                            <div class="remember-me">
+                                <input type="checkbox" id="rememberMe">
+                                <label for="rememberMe">تذكرني</label>
+                            </div>
+                            
+                            <a href="forgotpassword.HTML" class="forgot-password">نسيت كلمة المرور؟</a>
+                        </div>
+                        
+                        <button type="submit" class="auth-btn">تسجيل الدخول</button>
+                        
+                        <div class="auth-footer">
+                            <p>ليس لديك حساب؟ <a href="register.html">إنشاء حساب جديد</a></p>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="auth-image">
+                    <img src="images/81.jpg" alt="زهور بتلة فلاورز">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- الفوتر المبسط -->
+    <footer class="footer auth-footer">
+        <div class="container">
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; بتلة فلاورز <span id="current-year">2023</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
